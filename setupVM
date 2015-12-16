@@ -1,0 +1,36 @@
+#install gvim
+# TODO: check if already installed using rpm -q vim-X11
+echo "Install gvim..."
+sudo yum install vim-X11
+
+#install emacs
+sudo yum install emacs
+
+#install Java JDK
+sudo yum install java-1.8.0-openjdk java-1.8.0-openjdk-devel
+#need to set $JAVA_HOME in .bashrc
+
+#install xterm
+sudo yum install xterm
+
+#install VNC server
+sudo yum install --skip-broken tigervnc-server.x86_64
+
+#install nfs server
+sudo yum install nfs-utils
+
+#install X window and desktop for VNC
+sudo yum groupinstall --skip-broken "X Window System"
+sudo yum groupinstall --skip-broken "Desktop"
+
+#install intellij
+#> tar xfz Intellij_ideaIC-15.0.tar.gz
+#> mv idea-IC-143.381.42 ~/bin/
+
+#install plugins for vim
+#taglist plugin
+#matchit plugin
+
+#start and stop VNC server
+#> vncserver -geometry 1920x1200 :1
+#> vncserver -kill :1

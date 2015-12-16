@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/sge/ServingFunctionalTest/src/test/java/com/yahoo/mb/e2e'
+let g:netrw_dirhist_2='/home/sge/ServingFunctionalTest/src/test/java/com/yahoo/mb/e2e/utils'
+let g:netrw_dirhist_3='/home/sge/ServingFunctionalTest/src/test/java/com/yahoo/mb/e2e/cb_serving_tests'
