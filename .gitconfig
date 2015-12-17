@@ -1,0 +1,23 @@
+[color]
+	ui = true
+[user]
+	name = Song Ge
+	email = sge@yahoo-inc.com
+[core]
+	editor = vim
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[merge]
+	tool = vimdiff
+[mergetool]
+	conflictstyle = diff3
+	prompt = false
+[alias]
+	d = difftool
+	m = mergetool
+	m3 = mergetool -t merge3
+    lo = log --pretty=format:\"%h %ce %cd %s\" --graph
+[mergetool "merge3"]
+	cmd = vim -d -c \"wincmd l\" \"$LOCAL\" \"$MERGED\" \"$REMOTE\"
